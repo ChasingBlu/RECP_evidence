@@ -1,0 +1,4 @@
+{"timestamp_utc":"2026-02-22T15:16:10.7601668\u002B00:00","type":"identity_potential_loaded","step":0,"source":"cn_hermitian","message":"path=D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\RECP_Publication_Package_20260220\\evidence\\identity_baseline\\identity_potential_grid_may.npy sha256=3f2918e58dac5547bd0570fa730b707248deed2141bc755bd79034c1f9a6e66b"}
+{"timestamp_utc":"2026-02-22T15:16:11.9201974\u002B00:00","type":"cn_refactor_each_step","step":0,"source":"cn_hermitian","message":"enabled=True"}
+{"timestamp_utc":"2026-02-22T15:16:11.9226469\u002B00:00","type":"cn_init","step":0,"source":"cn_hermitian","message":"norm=1.000000E\u002B000 energy=1.430707E\u002B004"}
+{"timestamp_utc":"2026-02-22T15:16:11.9325168\u002B00:00","type":"cn_hermiticity_defect","step":0,"source":"cn_hermitian","message":"real=-1.307399E-011 imag=-1.222134E-011 abs=1.789665E-011"}
