@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-02-22T05:10:17.9451594\u002B00:00",
+  "coords_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\EXPORT_TRACK_A_EVIDENCE_20260213_1520\\coords_out\\may_ctxon_coords_2d.csv",
+  "centroid_path": null,
+  "centroid": {
+    "x": 0.6603522166666667,
+    "y": 0.44546979444444446
+  },
+  "grid_size": 512,
+  "x_min": 0,
+  "x_max": 1,
+  "y_min": 0,
+  "y_max": 1,
+  "dx": 0.0019569471624266144,
+  "dy": 0.0019569471624266144,
+  "potential": "harmonic",
+  "formula": "V(x,y)=0.5*((x-cx)^2\u002B(y-cy)^2)"
+}

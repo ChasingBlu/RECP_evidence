@@ -1,0 +1,18 @@
+{
+  "created": "2026-02-14T06:12:16.137945+00:00",
+  "coords_dir": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\EXPORT_TRACK_A_EVIDENCE_20260213_1520\\coords_out",
+  "baseline_file": "may_ctxon_coords_2d.csv",
+  "random_seed": 42,
+  "random_std": 1.0,
+  "outputs": [
+    "identity_centroid.json",
+    "may_ctxon_distances.csv",
+    "may_ctxon_summary.json",
+    "feb_ctxon_distances.csv",
+    "feb_ctxon_summary.json",
+    "feb_ctxoff_distances.csv",
+    "feb_ctxoff_summary.json",
+    "random_gaussian_distances.csv",
+    "random_gaussian_summary.json"
+  ]
+}
