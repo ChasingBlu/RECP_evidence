@@ -1,0 +1,187 @@
+{
+  "timestamp": "20260221_212932",
+  "settings_source": "config",
+  "run_settings_path": null,
+  "run_settings_hash": null,
+  "run_settings_snapshot": null,
+  "run_settings_snapshot_hash": null,
+  "config_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\QuantumSimulationEngine\\config\\task3_conservation.toml",
+  "config_hash": "2ed072f2e97bb3640da44e89b174cb928c52e55d88e748a1f71b7f04099263d0",
+  "config_snapshot": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\RECP_Publication_Package_20260220\\evidence\\centroid_energy_runs_20260221\\feb_ctxon\\config_snapshot.toml",
+  "config_snapshot_hash": "2ed072f2e97bb3640da44e89b174cb928c52e55d88e748a1f71b7f04099263d0",
+  "spec_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\QuantumSimulationEngine\\docs\\R-RECP_STACK_SPEC_v1.0.md",
+  "spec_hash": "1faf1f2ec5702d20eab3f6a9f12d4286ae53e46e6a4be30aea58c9f1cef2b120",
+  "spec_id": "R-RECP-STACK-SPEC-v1.0",
+  "coords_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\RECP_Publication_Package_20260220\\evidence\\centroid_energy_runs_20260221\\feb_ctxon_coords.json",
+  "coords_hash": "1e423a03e4b52e6bd24a4897cc9a313c0dfa66cf06aea70aecd2606f9dc0e763",
+  "use_anchor_potential": false,
+  "anchor_coords_path": null,
+  "anchor_coords_hash": null,
+  "identity_centroid_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\QuantumSimulationEngine\\results\\identity_baseline\\identity_centroid.json",
+  "identity_centroid_coords_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\RECP_Publication_Package_20260220\\evidence\\centroid_energy_runs_20260221\\may_ctxon_coords.json",
+  "identity_centroid_coords_hash": "a2595818eea7849d545f3f45ce6124b035cb2a1fa7c095c70a71eb4db9bb0a2b",
+  "identity_centroid": {
+    "x": 0.6603522100631446,
+    "y": 0.44546978998974657,
+    "z": 0
+  },
+  "identity_name": "identity_centroid",
+  "key_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\QuantumSimulationEngine\\src\\securelogger_core\\meta\\keys\\identity_centroid__20260221_key.key",
+  "key_sha256": "8746b4a250bbcbf8ec8e680507961eacda1cc132e1863f3c72d8f2aa670ccd64",
+  "grid_size": 128,
+  "dx": 0.06299212598425197,
+  "sigma": 3,
+  "time_steps": 100,
+  "entropy": 0.05,
+  "phase_from_z": false,
+  "phase_z_range": "normalized",
+  "legacy_mode": false,
+  "legacy_centroid_path": null,
+  "legacy_centroid": null,
+  "simulation_mode": "Drift",
+  "time_step_scheme": "crnknchls",
+  "hbar": 1,
+  "mass": 1,
+  "entropy_potential_scale": 1,
+  "drift_mode": "Legacy",
+  "drift_manual_scale": 1,
+  "anchor_strength_mode": "legacy",
+  "anchor_strength": 1,
+  "rng_seed": 507656707,
+  "secure_logger_dir": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\RECP_Publication_Package_20260220\\evidence\\centroid_energy_runs_20260221\\feb_ctxon\\secure_logger",
+  "secure_logger_system_id": "cairos_visualizer",
+  "negative_controls": null,
+  "gpu_precision": "Fp64",
+  "gpu_precision_note": null,
+  "render_backend": "Direct3D12",
+  "scalars": {
+    "Mode": "all",
+    "S1Centroid": {
+      "Enabled": true,
+      "UsePcaCoords": true,
+      "LogCsv": true,
+      "Dynamic": true
+    },
+    "S2Ics": {
+      "Enabled": false,
+      "Source": "embeddings",
+      "AnchorWeighted": true,
+      "LogCsv": true,
+      "EmbeddingsPath": "",
+      "AnchorEmbeddingsPath": ""
+    },
+    "S3Field": {
+      "Enabled": true,
+      "Method": "variance",
+      "LogCsv": true,
+      "LiveOverlay": true
+    }
+  },
+  "free_energy": {
+    "Enabled": true,
+    "U": {
+      "Source": "field",
+      "Reference": "loaded_centroid"
+    },
+    "S": {
+      "Source": "field"
+    },
+    "T": {
+      "Mode": "constant",
+      "Value": 1,
+      "FluctuationWindow": 100
+    },
+    "Validation": {
+      "MonotonicityMode": "trend",
+      "WindowSize": 100,
+      "TrendThreshold": 0.9,
+      "LogViolations": true
+    },
+    "Units": {
+      "Normalize": true,
+      "UScale": "baseline_std",
+      "SBase": 2,
+      "SMaxMode": "grid"
+    },
+    "Entropy": {
+      "Epsilon": 1E-15,
+      "LogEpsilonUsage": true,
+      "WarnIfEpsilonFractionGt": 0.5
+    },
+    "Dimension": {
+      "Mode": "2d"
+    },
+    "Teff": {
+      "Enabled": true,
+      "EpsilonS": 1E-10,
+      "LogRegime": true
+    },
+    "Output": {
+      "LogCsv": true,
+      "LogInterval": 1,
+      "ComputeDFDt": true,
+      "ComputeTeff": true
+    }
+  },
+  "identity_centroid_settings": {
+    "Source": "loaded",
+    "CoordFrame": "pca_2d",
+    "ValidateBounds": true,
+    "LogDerivationChain": true
+  },
+  "potentials": {
+    "Enabled": true,
+    "LogCsv": true,
+    "LogPng": true,
+    "LogInterval": 0,
+    "Mode": "auto",
+    "SliceIndex": -1,
+    "IncludeAnchor": true,
+    "IncludeEntropy": true,
+    "IncludeCombined": true
+  },
+  "density_matrix": {
+    "Enabled": false,
+    "Mode": "slice2d",
+    "TraceAxis": "y",
+    "LogInterval": 100,
+    "MaxDim": 128,
+    "DownsampleMode": "mean",
+    "UsePhase": true,
+    "LogBase": 2,
+    "SaveEigenvalues": false,
+    "SaveMatrix": false
+  },
+  "complex_diagnostics": {
+    "Enabled": false,
+    "LogInterval": 10,
+    "DimensionMode": "auto",
+    "SliceIndex": -1,
+    "LogFidelity": true,
+    "LogPhaseVariance": true,
+    "LogSingularityCount": true,
+    "LogCoherenceLength": true,
+    "PhaseEpsilon": 1E-12,
+    "SingularityThreshold": 6.283185307179586,
+    "CoherenceMaxR": 2,
+    "CoherenceStep": 0.25,
+    "CoherenceMode": "x",
+    "LogCoherenceCurve": true
+  },
+  "checkpoint": {
+    "Enabled": true,
+    "Interval": 50,
+    "KeepLast": 3,
+    "OutputDir": "checkpoints",
+    "SavePhase": true,
+    "SaveComplexField": true
+  },
+  "resume_from": "",
+  "invariants": {
+    "Enabled": true,
+    "FailOnNaN": true,
+    "FailOnInfinity": true,
+    "MinNorm": 0.1,
+    "MaxNorm": 10
+  }
+}

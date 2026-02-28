@@ -1,0 +1,42 @@
+{
+  "available": true,
+  "error": null,
+  "total_samples": 14,
+  "phases": {
+    "idlepre": {
+      "count": 2,
+      "temp_start_c": 43,
+      "temp_peak_c": 43,
+      "temp_trough_c": 43,
+      "temp_end_c": 43,
+      "power_peak_w": 18.28,
+      "power_mean_w": 18.259999999999998,
+      "clock_peak_mhz": 2355,
+      "clock_mean_mhz": 2355
+    },
+    "active": {
+      "count": 10,
+      "temp_start_c": 42,
+      "temp_peak_c": 44,
+      "temp_trough_c": 42,
+      "temp_end_c": 44,
+      "power_peak_w": 18.42,
+      "power_mean_w": 15.940999999999999,
+      "clock_peak_mhz": 2355,
+      "clock_mean_mhz": 2140.5
+    },
+    "idlepost": {
+      "count": 2,
+      "temp_start_c": 43,
+      "temp_peak_c": 43,
+      "temp_trough_c": 43,
+      "temp_end_c": 43,
+      "power_peak_w": 15.25,
+      "power_mean_w": 13.265,
+      "clock_peak_mhz": 210,
+      "clock_mean_mhz": 210
+    }
+  },
+  "delta_idle_to_active_c": -1,
+  "delta_active_to_idle_c": -1
+}

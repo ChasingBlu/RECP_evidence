@@ -1,0 +1,16 @@
+{
+  "SchemaVersion": "1.0",
+  "CreatedUtc": "2026-02-21T19:29:44.8882241\u002B00:00",
+  "Step": 50,
+  "GridSize": 128,
+  "Dimension": 2,
+  "SimulationMode": "drift",
+  "Dx": 0.06299212598425197,
+  "PsiPath": "checkpoint_000050_psi.bin",
+  "PhasePath": "checkpoint_000050_phase.bin",
+  "ComplexPath": null,
+  "PsiSha256": "3934d17ec2e70013a4e3cb606939321b6bf66ca685caef5f1c5d7f743d950d6a",
+  "PhaseSha256": "65ee27da0f79c975b9a7029a2f039758e04887420b8a85e7955fa5b4f531f04d",
+  "ComplexSha256": null,
+  "Note": null
+}

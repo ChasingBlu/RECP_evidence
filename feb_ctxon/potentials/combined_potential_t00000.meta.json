@@ -1,0 +1,10 @@
+{
+  "tag": "combined_potential",
+  "step": 0,
+  "min": 0,
+  "max": 0.05,
+  "mean": 0.04905880637498117,
+  "std": 0.004797868260165575,
+  "width": 128,
+  "height": 128
+}
