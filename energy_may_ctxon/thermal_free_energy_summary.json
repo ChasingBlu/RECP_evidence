@@ -1,0 +1,7 @@
+{
+  "total_records": 100,
+  "free_energy_spike_count": 60,
+  "free_energy_spike_max_mag": 0.006785567673832094,
+  "thermal_peak_count": 4,
+  "csv_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\RECP_Publication_Package_20260220\\evidence\\centroid_energy_runs_20260221\\energy_may_ctxon\\thermal_free_energy.csv"
+}

@@ -1,0 +1,9 @@
+{
+  "window_size": 100,
+  "windows": 0,
+  "decreasing_windows": 0,
+  "trend_fraction": 0,
+  "violation_count": 0,
+  "max_spike_magnitude": 0,
+  "status": "insufficient_data"
+}

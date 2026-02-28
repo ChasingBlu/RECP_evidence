@@ -1,0 +1,14 @@
+{
+  "total_steps": 99,
+  "watchdog_trips": 0,
+  "watchdog_trip_rate": 0,
+  "max_residual": 9.979068388943423E-13,
+  "max_condition_est": 1.0000857063312636,
+  "min_dt_used": 0.01,
+  "avg_iterations": 160.1919191919192,
+  "avg_runtime_ms": 1564.3031282828276,
+  "total_runtime_ms": 154866.00969999994,
+  "convergence_threshold": 1E-12,
+  "max_iterations_cap": 5000,
+  "csv_path": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\RECP_Publication_Package_20260220\\evidence\\centroid_energy_runs_20260221\\energy_may_ctxon\\cn_convergence.csv"
+}

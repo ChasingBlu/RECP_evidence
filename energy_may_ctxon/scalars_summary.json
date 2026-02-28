@@ -1,0 +1,20 @@
+{
+  "centroid_distance": {
+    "mean": 0.3763260761888118,
+    "mean_squared": 0.18948807032941917,
+    "std_squared": 0.23031384682777478,
+    "max_squared": 0.7435687840586911,
+    "use_z": false,
+    "centroid": {
+      "x": 0.6603522100631446,
+      "y": 0.44546978998974657,
+      "z": 0
+    }
+  },
+  "ics": null,
+  "settings": {
+    "mode": "all",
+    "s1_dynamic": true,
+    "s3_method": "variance"
+  }
+}

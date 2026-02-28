@@ -1,0 +1,16 @@
+{
+  "SchemaVersion": "1.0",
+  "CreatedUtc": "2026-02-21T20:02:11.7986945\u002B00:00",
+  "Step": 50,
+  "GridSize": 128,
+  "Dimension": 2,
+  "SimulationMode": "complex",
+  "Dx": 0.06299212598425197,
+  "PsiPath": null,
+  "PhasePath": null,
+  "ComplexPath": "checkpoint_000050_complex.bin",
+  "PsiSha256": null,
+  "PhaseSha256": null,
+  "ComplexSha256": "8d5721ea22e87c84037bc86a9024d0be3f830c905490729e75e5ef0f32e2fee4",
+  "Note": null
+}
