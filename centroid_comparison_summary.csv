@@ -1,0 +1,4 @@
+run,u_centroid_t0,u_centroid_t99,delta_u_centroid,energy_t0,energy_t99,mean_x_t0,mean_y_t0,identity_centroid_x,identity_centroid_y
+may_ctxon,0.1151,0.0792,-0.0359,15.194,8.352,0.774,0.437,0.660352,0.445470
+feb_ctxon,0.2028,0.1242,-0.0786,17.023,8.076,0.578,0.560,0.660352,0.445470
+feb_ctxoff,0.2165,0.0800,-0.1365,15.828,6.673,0.493,0.343,0.660352,0.445470
