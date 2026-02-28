@@ -1,0 +1,95 @@
+CB03520260228
+================================================================================
+  LOCKED — FINAL EVIDENCE PACKAGE
+  RECP Paper: Identity as Quantum Simulation
+  Lock date: 2026-02-20
+  Status: LOCKED AND FINAL. Do not modify contents; append-only manifest.
+================================================================================
+
+This folder contains the canonical evidence artifacts for the publication. All
+paths in the paper refer to this package using the obfuscated root:
+  [EVIDENCE_ROOT] = results/20260220_Final_Evidence_Locked
+
+Contents:
+---------
+identity_baseline/
+  may_ctxon_summary.json      — May ctx-ON mean distance 0.3763 (C1)
+  may_ctxon_distances.csv     — Per-turn distances May ctx-ON
+  feb_ctxon_summary.json      — Feb ctx-ON mean distance 0.1188 (C2)
+  feb_ctxon_distances.csv     — Per-turn distances Feb ctx-ON
+  feb_ctxoff_summary.json     — Feb ctx-OFF mean distance 0.3064 (C6)
+  feb_ctxoff_distances.csv    — Per-turn distances Feb ctx-OFF
+  random_gaussian_summary.json — Random baseline mean distance 1.126 (C7)
+  random_gaussian_distances.csv
+  bootstrap_ci_95.json       — 95% CIs, 10k resamples (C4, C5)
+  identity_centroid.json     — Centroid c_May (C8)
+  baseline_manifest.json      — Manifest of baseline artifacts
+
+conservation/
+  energy.csv                 — Simulation energy time series (E_0≈17.65→E_f≈9.22; −47%)
+  conservation_report.json   — norm_error_max/mean; conservation < 10⁻⁶ (C12)
+  norm_audit.csv             — Per-timestep norm audit
+  centroid.csv               — Centroid trajectory
+  run_manifest.json          — Run metadata
+
+Key values (paper-aligned):
+  Mean distance May ctx-ON:  0.3763  (68.4% reduction to Feb)
+  Mean distance Feb ctx-ON:  0.1188
+  Centroid U reduction (C14): may_ctxon 31.2%, feb_ctxon 38.7%, feb_ctxoff 63.0%
+  Conservation (simulation): norm_error < 10⁻⁶
+
+REPA: This package is hash-verifiable. Do not alter files after lock.
+
+APPEND 2026-02-20: Energy interpretation amended. The value 17.6→9.2 is simulation
+diagnostic energy (V(x,y)=½(x²+y²) at origin), not embedding energy. See
+ENERGY_INTERPRETATION_NOTE_20260220.md. LOCK_MANIFEST line above retained for
+traceability; correction recorded here.
+
+APPEND 2026-02-21: Centroid-referenced energy runs (C14). CAIROS_Seshat drift-mode
+runs with identity baseline c₀=(0.660352, 0.445470). See centroid_energy_runs_20260221/.
+  centroid_energy_runs_20260221/
+    centroid_comparison_summary.csv   — u_centroid t=0→t=99, % reduction
+    IDENTITY_CENTROID_COMPARISON.md   — Interpretation and run details
+    feb_vs_may_centroid/              — feb_ctxon, feb_ctxoff runs
+  Centroid U reduction (validated): may_ctxon 31.2%, feb_ctxon 38.7%, feb_ctxoff 63.0%.
+
+APPEND 2026-02-22: CN Hermitian conservation audits (C15). Real-time CN with Hermitian H,
+deterministic MKL settings, boundary decoupling, and triad‑scaled energy drift tolerance.
+See cn_hermitian_runs_20260222/:
+  cn_hermitian_runs_20260222/
+    cn_hermitian_100steps/                    — 100‑step CN audit (unitary + energy + hermiticity pass)
+    cn_hermitian_300steps_refactor_visuals/   — 300‑step CN audit w/ refactor_each_step + visuals
+  Threshold policy (triad‑scaled):
+    energy_drift_tol_abs = max(1e-8, steps * 1e-10)
+    energy_drift_tol_rel = 1e-10
+  300‑step run: energy drift max_abs ≈ 1.53e-8 (passes under triad‑scaled policy).
+
+APPEND 2026-02-22: CN Hermitian C1/C2 delta (May vs Feb coords).
+  cn_hermitian_runs_20260222/
+    cn_hermitian_300steps_refactor_visuals_feb/ — Feb ctx-on run (C2) under same CN settings
+    cn_c1_c2_delta.json                         — Δ(C2−C1): centroid distance, norm deviation, energy drift
+    cn_c1_c2_delta.csv                          — CSV summary of the delta
+
+APPEND 2026-02-22: CN Hermitian 300‑step May run with full visuals + residual diagnostics.
+  cn_hermitian_runs_20260222/
+    cn_hermitian_300steps_may_frames_20260222/  — 300 frames + plots, residual logging enabled (cn_residual.csv)
+  Note: manifest.sha256 generated post‑run from run_manifest inputs + output files (REPA‑logged).
+
+APPEND 2026-02-22: CBDA tagging enabled for evidence documents.
+  Evidence docs are CBDA‑signed (closed‑source, proprietary). Verification keys are held internally.
+  Tagged file list: CBDA_TAGGED_FILES_20260222.md
+
+APPEND 2026-02-23: CN Hermitian 50‑step Unreal‑operational run (May potential).
+  cn_hermitian_runs_20260223/
+    cn_hermitian_50steps_unreal_may_20260223_155750/ — CN Hermitian audit (unitarity + energy + hermiticity pass) under Unreal‑running session; local transport only.
+
+================================================================================
+
+
+​‌​​​​‌‌​‌​​​​‌​​‌​‌‌​‌​​‌​‌​‌‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​‌‌‌​‌‌‌‌​‌​​‌‌​‌​​​​‌‌‌​​​‌​‌​‌‌​​​‌​‌​‌​​​​‌‌​‌​​​​‌​​‌​​‌‌​​​‌​​​​​‌​‌​​​​‌​​​‌​‌‌​‌​​‌‌​​​‌​​‌​‌‌‌​​​‌‌​​​​​​‌​‌‌​‌​​‌‌​​​‌​​‌‌​‌‌‌​​‌‌​‌‌‌​​‌‌​​​‌​​‌‌​‌‌‌​​‌‌‌​​‌​​‌‌​​‌‌​​‌‌​‌​​​​‌‌​‌​‌​​‌‌​​‌​​​‌​‌‌​‌​‌​‌​​‌‌​‌​‌​​​​​‌​​​‌​‌​‌​​​​‌‌​​‌​‌‌​‌​‌‌​​‌​‌​​‌‌​‌‌‌​‌‌​​‌​​​​‌‌​‌​​​​‌‌‌​​​​​‌‌​​​​​‌‌​​‌​​​‌‌​​​​‌​​‌‌​‌​‌​‌‌​​‌​‌​‌‌​​​‌​​​‌‌​‌​​​‌‌​​​‌‌​​‌‌‌​​​​​‌‌‌​​‌​​‌‌‌​​​​​‌​‌‌​‌​​‌‌​‌‌‌​​‌‌​​​‌​​‌‌​‌‌‌​‌‌​​​​‌​​‌‌‌​​‌​​‌‌​​​​​​‌‌​​​‌​​‌‌​​‌​​‌‌​​​​‌​​‌‌​‌​‌​‌‌​​​‌​​​‌‌​​‌‌​‌‌​​‌​‌​​‌‌​​​​​​‌‌​‌​​​​‌‌‌​​‌
+
+
+​‌​​​​‌‌​‌​​​​‌​​‌​‌‌​‌​​‌​‌​‌‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​‌‌‌​‌‌‌​‌‌​‌‌​​‌‌‌‌​‌​​​​‌‌‌​​​​​‌​​‌‌​‌​​​​‌‌​‌​​​​‌​​‌​​‌‌​​​‌​​​​​‌​‌​​​​‌​​​‌​‌‌​‌​​‌‌​​​‌​​‌​‌‌‌​​​‌‌​​​​​​‌​‌‌​‌​​‌‌​​​‌​​‌‌​‌‌‌​​‌‌​‌‌‌​​‌‌​​​‌​​‌‌​‌‌‌​​‌‌‌​​‌​​‌‌​​‌‌​​‌‌​‌‌​​​‌‌​‌​‌​​‌‌​‌‌​​​‌​‌‌​‌​‌​‌​​‌‌​‌​‌​​​​​‌​​​‌​‌​‌​​​​‌‌​​‌​‌‌​‌​​‌‌​​​‌​​‌‌​‌‌​​​‌‌​​‌‌​​‌‌​‌‌‌​​‌‌​‌​‌​​‌‌​​​​​​‌‌​‌​​​‌‌​​‌‌​​​‌‌​​‌​​​‌‌​‌​​​‌‌​​​​‌​‌‌​​​‌‌​​‌‌‌​​​​​‌‌​​​‌​​‌‌‌​​‌​‌‌​​​‌‌​​‌​‌‌​‌​​‌‌​‌‌‌​​‌‌​‌​​​​‌‌‌​​‌​​‌‌​​‌​​​‌‌​‌​‌​​‌‌‌​​​​​‌‌‌​​‌​‌‌​​‌‌​​​‌‌‌​​‌​​‌‌​​‌‌​​‌‌‌​​​​​‌‌​​​​​​‌‌​‌‌‌​​‌‌​​‌‌​‌‌​​‌‌​​​‌‌‌​​‌
+
+
+​‌​​​​‌‌​‌​​​​‌​​‌​‌‌​‌​​‌​‌​‌‌‌​​​​​​​​​​​​​​​​​​​​​​​​​​‌‌‌​‌‌‌​​‌‌‌​​​‌‌‌‌​​​‌​​‌‌​​​​​‌‌‌​​‌​‌​​​​‌‌​‌​​​​‌​​‌​​‌‌​​​‌​​​​​‌​‌​​​​‌​​​‌​‌‌​‌​​‌‌​​​‌​​‌​‌‌‌​​​‌‌​​​​​​‌​‌‌​‌​​‌‌​​​‌​​‌‌​‌‌‌​​‌‌​‌‌‌​​‌‌​​‌​​​‌‌​​‌​​​‌‌​‌‌‌​​‌‌​‌‌​​​‌‌​​​‌​​‌‌​​​​​​‌‌‌​​‌​​‌​‌‌​‌​‌​‌​​‌‌​‌​‌​​​​​‌​​​‌​‌​‌​​​​‌‌​​‌​‌‌​‌​‌‌​​‌​​​​‌‌​‌​​​​‌‌‌​​‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌‌​​‌​​‌‌​​​​‌​‌‌​​‌‌​​​‌‌​​‌‌​​‌‌​​​‌​​‌‌​​​​​​‌‌‌​​​​​‌‌​​‌​​​‌‌‌​​‌​‌‌​​​​‌​​‌‌​​​​​​‌​‌‌​‌​​‌‌​​‌‌​​‌‌​‌‌‌​​‌‌​‌​‌​​‌‌​‌‌‌​‌‌​​​‌‌​​‌‌​‌‌‌​‌‌​​‌​​​​‌‌‌​​​​​‌‌​​​​​‌‌​​‌​​​​‌‌​‌​​​​‌‌​​​‌​​‌‌‌​​​​​‌‌‌​​‌​‌‌​​‌​‌​‌‌​​​​‌
