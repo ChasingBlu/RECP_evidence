@@ -1,0 +1,10 @@
+{
+  "tag": "anchor_potential",
+  "step": 0,
+  "min": 0,
+  "max": 0,
+  "mean": 0,
+  "std": 0,
+  "width": 512,
+  "height": 512
+}

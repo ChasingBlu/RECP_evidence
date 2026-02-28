@@ -1,0 +1,14 @@
+{
+  "norm_error_max": 2.1449508835758024E-13,
+  "norm_error_mean": 1.0355864314230227E-13,
+  "centroid_drift_max": 0,
+  "centroid_drift_mean": 0,
+  "centroid_start": {
+    "x": -1.0618852323423478,
+    "y": 0.6206038433334455
+  },
+  "centroid_end": {
+    "x": -0.3370103233922853,
+    "y": -0.16014875555301514
+  }
+}

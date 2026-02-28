@@ -1,0 +1,40 @@
+{
+  "energy0": 725.4007295563124,
+  "unitarity": {
+    "max_abs": 5.373479439185326E-14,
+    "rms": 1.815122859977695E-14,
+    "count": 300
+  },
+  "energy_drift": {
+    "max_abs": 1.7178081179736182E-10,
+    "rms": 9.206845383139293E-11,
+    "max_relative": 2.3680815968083E-13,
+    "count": 300
+  },
+  "residual_l2": {
+    "max_abs": 8.344276809807676E-15,
+    "rms": 8.272473825903629E-15,
+    "count": 300
+  },
+  "residual_max": {
+    "max_abs": 9.947598300641403E-14,
+    "rms": 2.5802532191043756E-14,
+    "count": 300
+  },
+  "hermiticity_defect": {
+    "real": -2.646771690706373E-13,
+    "imag": -3.952393967665557E-14,
+    "abs": 2.676119310397252E-13
+  },
+  "thresholds": {
+    "unitary_tol_max": 1E-10,
+    "unitary_tol_rms": 1E-12,
+    "energy_drift_tol_abs": 1E-08,
+    "energy_drift_tol_rel": 1E-08,
+    "hermiticity_tol": 1E-10
+  },
+  "passed": true,
+  "unitary_passed": true,
+  "energy_passed": true,
+  "hermiticity_passed": true
+}

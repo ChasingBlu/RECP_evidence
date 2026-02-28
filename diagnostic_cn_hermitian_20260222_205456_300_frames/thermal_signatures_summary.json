@@ -1,0 +1,31 @@
+{
+  "available": true,
+  "error": null,
+  "total_samples": 4,
+  "phases": {
+    "idlepre": {
+      "count": 2,
+      "temp_start_c": 43,
+      "temp_peak_c": 43,
+      "temp_trough_c": 43,
+      "temp_end_c": 43,
+      "power_peak_w": 17.83,
+      "power_mean_w": 17.83,
+      "clock_peak_mhz": 2355,
+      "clock_mean_mhz": 2355
+    },
+    "idlepost": {
+      "count": 2,
+      "temp_start_c": 40,
+      "temp_peak_c": 40,
+      "temp_trough_c": 40,
+      "temp_end_c": 40,
+      "power_peak_w": 2.71,
+      "power_mean_w": 2.665,
+      "clock_peak_mhz": 210,
+      "clock_mean_mhz": 210
+    }
+  },
+  "delta_idle_to_active_c": null,
+  "delta_active_to_idle_c": null
+}
