@@ -1,0 +1,21 @@
+﻿{
+  "axiom": "Semantic (context)",
+  "stream_coords": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\20260225_publication_final\\20260227_EVIDENCE_FINAL\\lexical_run\\coords_3d\\feb_ctxon_coords_3d.csv",
+  "baseline_coords": "D:\\ChasingBlu_RND\\Lab\\Active\\CAIROS_visualizer\\20260225_publication_final\\20260227_EVIDENCE_FINAL\\lexical_run\\coords_3d\\may_ctxon_coords_3d.csv",
+  "total_steps": 4,
+  "zone_a_count": 1,
+  "zone_b_count": 2,
+  "zone_c_count": 1,
+  "tau_alpha": 1.4889447210876388,
+  "lambda_reg": 1E-06,
+  "alpha_quantile": 0.95,
+  "core_ratio": 0.7,
+  "mean_mahalanobis": 2.3926114544974055,
+  "max_mahalanobis": 5.807943240393275,
+  "mean_tdr": 1.176137344659658,
+  "max_tdr": 3.1939413501526897,
+  "centroid": {
+    "x": 0.6104908175,
+    "y": 0.296391995
+  }
+}
