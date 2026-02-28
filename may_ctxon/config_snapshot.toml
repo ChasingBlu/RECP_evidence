@@ -1,0 +1,103 @@
+﻿schema_version = 9
+
+# Task 3: Conserved Quantity Check (REPA-aligned)
+
+coords_path = "data/coords.json"
+output_dir = "results/task3_conservation_{timestamp}"
+
+# Grid + physics
+grid_size = 128
+sigma = 3.0
+phase_sigma = 3.0
+dt = 0.01
+time_steps = 100
+entropy = 0.05
+norm_tolerance = 1.0e-6
+
+# Domain for energy computation
+x_min = -4.0
+x_max = 4.0
+y_min = -4.0
+y_max = 4.0
+
+# Coordinate handling
+normalize_coords = true
+reduce_to_2d = true
+
+# Potential field (anchors)
+use_anchor_potential = false
+anchor_coords_path = ""
+potential_sigma = 5.0
+
+# Rendering
+window_width = 960
+window_height = 960
+save_frames = false
+save_every = 1
+frame_rate = 30
+backend = "Direct3D12"
+headless = true
+backend_fallback = false
+enable_control_panel = false
+
+# MP4 output
+enable_ffmpeg = false
+ffmpeg_path = "ffmpeg"
+mp4_output = "results/task3_conservation_{timestamp}/simulation.mp4"
+
+gpu_determinism = true
+
+gpu_compute = true
+
+gpu_precision = "fp64"
+
+legacy_mode = false
+
+legacy_centroid_path = "results/identity_baseline/identity_centroid.json"
+
+simulation_mode = "drift"
+
+time_step_scheme = "crnknchls"
+
+hbar = 1
+
+mass = 1
+
+entropy_potential_scale = 1
+
+phase_from_z = false
+
+phase_z_range = "normalized"
+
+drift_mode = "legacy"
+
+drift_manual_scale = 1
+
+anchor_strength_mode = "legacy"
+
+anchor_strength = 1
+
+grid_overlay = true
+
+grid_divisions = 16
+
+FullMetalBridge_enabled = false
+
+FullMetalBridge_texture_resolution = 128
+
+FullMetalBridge_include_SESHAT = true
+
+color_palette = "hsv"
+
+color_phase_offset = 0
+
+color_saturation = 1
+
+color_value_gamma = 1
+
+color_value_scale = 1
+
+color_value_floor = 0
+
+color_value_power = 1
+
