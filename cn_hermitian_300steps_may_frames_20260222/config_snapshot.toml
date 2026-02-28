@@ -1,0 +1,78 @@
+﻿# Quantum Simulation Engine - settings (REPA-aligned)
+# All values are required. No silent fallbacks.
+schema_version = 9
+FullMetalBridge_enabled = true
+headless = true
+# Paths relative to workspace root (directory containing config/)
+coords_path = "data/centroid_may_coords/may_ctxon_coords_2d.csv"
+output_dir = "results/run_{timestamp}"
+grid_size = 256
+sigma = 3
+phase_sigma = 3
+dt = 0.01
+time_steps = 200
+entropy = 0.05
+norm_tolerance = 1E-06
+x_min = -4.0
+x_max = 4.0
+y_min = -4.0
+y_max = 4.0
+
+# Coordinate handling
+normalize_coords = true
+reduce_to_2d = false
+
+# Legacy replication mode
+legacy_mode = false
+legacy_centroid_path = "results/identity_baseline/identity_centroid.json"
+simulation_mode = "complex"
+time_step_scheme = "crnknchls"
+hbar = 1
+mass = 1
+entropy_potential_scale = 1
+drift_mode = "legacy"
+drift_manual_scale = 1
+use_anchor_potential = true
+anchor_coords_path = "data/centroid_may_coords/anchors_may_ctxon_coords_2d.csv"
+potential_sigma = 5.0
+anchor_strength_mode = "legacy"
+anchor_strength = 1
+window_width = 960
+window_height = 960
+grid_overlay = true
+grid_divisions = 16
+save_frames = true
+save_every = 1
+frame_rate = 30
+backend = "Direct3D12"
+backend_fallback = false
+enable_control_panel = false
+gpu_determinism = true
+gpu_compute = true
+gpu_precision = "fp64"
+enable_ffmpeg = true
+ffmpeg_path = "ffmpeg"
+mp4_output = "results/run_{timestamp}/simulation.mp4"
+
+phase_from_z = false
+
+phase_z_range = "normalized"
+
+color_palette = "hsv"
+
+color_phase_offset = 0
+
+color_saturation = 1
+
+color_value_gamma = 1
+
+color_value_scale = 1
+
+color_value_floor = 0
+
+color_value_power = 1
+
+FullMetalBridge_texture_resolution = 128
+
+FullMetalBridge_include_SESHAT = true
+

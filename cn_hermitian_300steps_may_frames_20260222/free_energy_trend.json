@@ -1,0 +1,9 @@
+{
+  "window_size": 100,
+  "windows": 101,
+  "decreasing_windows": 101,
+  "trend_fraction": 1,
+  "violation_count": 0,
+  "max_spike_magnitude": 0.0011345849710845402,
+  "status": "stable"
+}
